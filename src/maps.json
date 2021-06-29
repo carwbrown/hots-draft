@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Alterac Pass",
+    "id": 0,
+    "needs": ["camp clear", "side laners"],
+    "wants": ["poke", "boss control"],
+    "strategy": "take camps and stall poke the objective"
+  },
+  {
+    "name": "Battlefield of Eternity",
+    "id": 1,
+    "needs": ["race"],
+    "wants": [],
+    "strategy": "lots"
+  },
+  {
+    "name": "Braxis Holdout",
+    "id": 2,
+    "needs": ["poo"],
+    "wants": ["poo"],
+    "strategy": "take camps"
+  },
+  {
+    "name": "Cursed Hollow",
+    "id": 3,
+    "needs": ["boss control", "camp clear", "siege"],
+    "wants": ["poke", "global"],
+    "strategy": "Macro, pushing, boss, etc"
+  },
+  {
+    "name": "Dragon Shire",
+    "id": 4,
+    "needs": ["camp clear", "anchor"],
+    "wants": ["ganking", "globals"],
+    "strategy": "anchors and camps"
+  },
+  {
+    "name": "Garden of Terror",
+    "id": 5,
+    "needs": ["insane camp clear", "siege"],
+    "wants": ["poke", "globals"],
+    "strategy": "macro and objective"
+  },
+  {
+    "name": "Hanamura Temple",
+    "id": 6,
+    "needs": ["insane camp clear", "team fight"],
+    "wants": ["siege"],
+    "strategy": "camps and pushing"
+  },
+  {
+    "name": "Infernal Shrines",
+    "id": 7,
+    "needs": ["zone control", "aoe"],
+    "wants": ["double soaker"],
+    "strategy": "shrine control and objective"
+  },
+  {
+    "name": "Tomb of the Spider Queen",
+    "id": 8,
+    "needs": ["insane waveclear", "stall"],
+    "wants": ["rotation disruption"],
+    "strategy": "clear waves and disrupt turn ins"
+  },
+  {
+    "name": "Towers of Doom",
+    "id": 9,
+    "needs": ["double soaker", "camp clear"],
+    "wants": ["ganking", "late game"],
+    "strategy": "control bot lane"
+  },
+  {
+    "name": "Volkskaya Foundry",
+    "id": 10,
+    "needs": ["camp clear", "late game"],
+    "wants": ["point control"],
+    "strategy": "point control"
+  },
+  {
+    "name": "Warhead Junction",
+    "id": 11,
+    "needs": ["camp clear", "safe offlane"],
+    "wants": ["siege"],
+    "strategy": "?"
+  }
+]
