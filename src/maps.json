@@ -16,9 +16,9 @@
   {
     "name": "Braxis Holdout",
     "id": 2,
-    "needs": ["poo"],
-    "wants": ["poo"],
-    "strategy": "take camps"
+    "needs": ["point control", "insane waveclear", "sustain"],
+    "wants": ["roamers"],
+    "strategy": "point control and ganking"
   },
   {
     "name": "Cursed Hollow",
