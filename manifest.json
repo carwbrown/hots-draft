@@ -1,0 +1,9 @@
+{
+  "short_name": "HotS Draft",
+  "name": "Heroes of the Storm Drafter",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
