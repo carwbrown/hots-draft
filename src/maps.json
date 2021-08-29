@@ -56,29 +56,36 @@
     "strategy": "shrine control and objective"
   },
   {
-    "name": "Tomb of the Spider Queen",
+    "name": "Sky Temple",
     "id": 8,
     "needs": ["insane waveclear", "stall"],
     "wants": ["rotation disruption"],
     "strategy": "clear waves and disrupt turn ins"
   },
   {
-    "name": "Towers of Doom",
+    "name": "Tomb of the Spider Queen",
     "id": 9,
+    "needs": ["globals", "camp clear"],
+    "wants": ["boss control", "wave clear"],
+    "strategy": "get up in structures trade temples"
+  },
+  {
+    "name": "Towers of Doom",
+    "id": 10,
     "needs": ["double soaker", "camp clear"],
     "wants": ["ganking", "late game"],
     "strategy": "control bot lane"
   },
   {
     "name": "Volkskaya Foundry",
-    "id": 10,
+    "id": 11,
     "needs": ["camp clear", "late game"],
     "wants": ["point control"],
     "strategy": "point control"
   },
   {
     "name": "Warhead Junction",
-    "id": 11,
+    "id": 12,
     "needs": ["camp clear", "safe offlane"],
     "wants": ["siege"],
     "strategy": "?"
