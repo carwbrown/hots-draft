@@ -58,16 +58,16 @@
   {
     "name": "Sky Temple",
     "id": 8,
-    "needs": ["insane waveclear", "stall"],
-    "wants": ["rotation disruption"],
-    "strategy": "clear waves and disrupt turn ins"
+    "needs": ["globals", "camp clear"],
+    "wants": ["boss control", "wave clear"],
+    "strategy": "get up in structures trade temples"
   },
   {
     "name": "Tomb of the Spider Queen",
     "id": 9,
-    "needs": ["globals", "camp clear"],
-    "wants": ["boss control", "wave clear"],
-    "strategy": "get up in structures trade temples"
+    "needs": ["insane waveclear", "stall"],
+    "wants": ["rotation disruption"],
+    "strategy": "clear waves and disrupt turn ins"
   },
   {
     "name": "Towers of Doom",

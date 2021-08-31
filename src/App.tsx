@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import maps from "./maps.json";
+import toons from "./heroes.json";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -16,7 +17,7 @@ enum COMPOSITION_ATTRIBUTES {
   DOUBLE_SOAKER = "double soaker",
   ENGAGE = "engage",
   FOLLOWUP = "followup",
-  GANKING = "GANKING",
+  GANKING = "ganking",
   GLOBAL = "global",
   HEALER = "healer",
   INSANE_CAMP_CLEAR = "insane camp clear",
@@ -36,16 +37,11 @@ enum COMPOSITION_ATTRIBUTES {
   TEAM_FIGHT = "team fight",
   WAVE_CLEAR = "wave clear",
 }
-/* 
-Camp Clear
-Burst Damage
-Sustained Damage
-Healer
-Tank
-Engage
-Followup
-(Physical or Spell)
-*/
+
+enum HERO_ATTRIBUTE {
+  CROWD_CONTROL = "crowd control",
+  OP = "op",
+}
 
 export const generalWants: COMPOSITION_ATTRIBUTES[] = [
   COMPOSITION_ATTRIBUTES.CAMP_CLEAR,
@@ -77,6 +73,14 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+/* TODO:
+  - add tags to heroes
+  - selectable heroes list
+  - searchable heroes list
+  - filterable heroes list
+  - algorithm that looks at selected heroes, selected map and displays what else you need
+*/
+
 function App() {
   const classes = useStyles();
   const [heroesMap, setHeroesMap] = React.useState<number>(0);
@@ -85,7 +89,7 @@ function App() {
     setHeroesMap(event.target.value as number);
   };
 
-  const getMapInfo = (id: number) => {
+  const displayMapInfo = (id: number) => {
     const selectedMap = maps.find((mapItem) => mapItem.id === id);
     return (
       <>
@@ -103,6 +107,19 @@ function App() {
         </ul>
         <h3>Strategy</h3>
         <div>{selectedMap?.strategy}</div>
+      </>
+    );
+  };
+
+  const displayToonInfo = () => {
+    return (
+      <>
+        <h3>Heroes</h3>
+        <ul>
+          {toons?.map((toon) => {
+            return <li key={toon.id}>{toon.name}</li>;
+          })}
+        </ul>
       </>
     );
   };
@@ -133,7 +150,8 @@ function App() {
           })}
         </Select>
       </FormControl>
-      {getMapInfo(heroesMap)}
+      {displayMapInfo(heroesMap)}
+      {displayToonInfo()}
     </div>
   );
 }
